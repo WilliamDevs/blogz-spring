@@ -12,7 +12,7 @@
 	        <tr>
 	            <td><label for="username">Username</label></td>
 	            <td>
-	                <input name="username" type="text" th:value="${username}"></input>
+	                <input name="username" type="text" th:value="${username}"  onkeyup="saywelcome(this.value)"></input>
 	                <span class="error" th:text="${username_error}"></span>
 	            </td>
 	        </tr>
@@ -33,6 +33,7 @@
 	    </table>
 	    <button type="submit">Sign Up</button>
 	</form>
+	 <div id="hello"></div>
 
 </body>
 </html>

@@ -7,6 +7,9 @@
 	<div th:replace="template :: navigation"></div>
 
 	<!-- TODO - display a single blog post -->
+	<h2 th:text="${post.title}"></h2>
+	<p th:text="${post.body}"></p>
+	<p class="author">written by <a th:href="'/blog/' + ${username}" th:text="${username}"></a></p>
 
 </body>
 </html>

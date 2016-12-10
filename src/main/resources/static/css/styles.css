@@ -3,8 +3,12 @@ body {
     width: 800px;
     margin: 0 auto;
     padding: 10px;
+    background: #ccc;
 }
-
+a {
+	font-size:20px;
+	text-decoration: none;
+}
 .error {
     color: red;
 }
@@ -20,6 +24,7 @@ input[type=email] {
     width: 400px;
     font-size: 20px;
     padding: 2px;
+    border:none;
 }
 
 textarea {
@@ -27,6 +32,7 @@ textarea {
     height: 200px;
     font-size: 17px;
     font-family: monospace;
+    border:none;
 }
 
 input[type=submit] {
@@ -54,6 +60,7 @@ hr {
 .post-author {
     font-style: italic;
     font-size: 12px;
+    right:right;
 }
 
 nav ul {
@@ -69,4 +76,11 @@ nav ul li {
 
 nav #user-account {
     float: right;
+}
+
+#users{
+	margin:15px;
+}
+#hello{
+	font-size:20px;
 }

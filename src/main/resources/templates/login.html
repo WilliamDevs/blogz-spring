@@ -13,7 +13,7 @@
             <tr>
                 <td><label for="username">Username</label></td>
                 <td>
-                    <input name="username" type="text" th:value="${username}"></input>
+                    <input id="hi" name="username" type="text" th:value="${username}" onkeyup="sayhi(this.value)"></input>
                 </td>
             </tr>
             <tr>
@@ -26,6 +26,7 @@
         <button type="submit">Log In</button>
     </form>
     <p>Don't have an account? <a href="/signup">Create one!</a></p>
+    <div id="hello"></div>
 
 </body>
 </html>
